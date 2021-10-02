@@ -52,7 +52,7 @@ public class ControladorRegistro {
 		//Validar que la password sea igual a la repassword
 		ModelMap modelo = new ModelMap();
 		Usuario usuario = new Usuario();
-		Cliente verif = servicioLogin.verificarCorreo(cliente);
+		Cliente verif = servicioCliente.verificarCorreo(cliente);
 		Boolean verificarPass = servicioCliente.verificarPassword(cliente);
 		List<String> listaLocalidades = servicioLocalidad.devolverNombresDeLocalidades();
 		if(cliente.getNombre() != "" && cliente.getApellido() != "" && cliente.getLocalidad() != ""){
