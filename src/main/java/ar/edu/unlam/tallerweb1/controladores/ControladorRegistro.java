@@ -16,7 +16,6 @@ import ar.edu.unlam.tallerweb1.modelo.Usuario;
 import ar.edu.unlam.tallerweb1.servicios.ServicioCliente;
 import ar.edu.unlam.tallerweb1.servicios.ServicioLocalidad;
 import ar.edu.unlam.tallerweb1.servicios.ServicioLogin;
-
 import ar.edu.unlam.tallerweb1.servicios.servicioRegistro;
 
 
@@ -28,6 +27,7 @@ public class ControladorRegistro {
 	private ServicioLogin servicioLogin;
 	private ServicioCliente servicioCliente;
 	private ServicioLocalidad servicioLocalidad;
+	
 	@Autowired
 	public ControladorRegistro(servicioRegistro servicioRegistro, ServicioLogin servicioLogin, ServicioCliente servicioCliente, ServicioLocalidad servicioLocalidad){
 		this.servicioRegistro = servicioRegistro;
