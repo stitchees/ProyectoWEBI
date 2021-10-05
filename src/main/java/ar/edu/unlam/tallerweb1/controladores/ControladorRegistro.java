@@ -54,7 +54,7 @@ public class ControladorRegistro {
 		Usuario usuario = new Usuario();
 		Cliente verif = servicioCliente.verificarCorreo(cliente);
 		Boolean verificarPass = servicioCliente.verificarPassword(cliente);
-		List<String> listaLocalidades = servicioLocalidad.devolverNombresDeLocalidades();
+		//List<String> listaLocalidades = servicioLocalidad.devolverNombresDeLocalidades();
 		if(cliente.getNombre() != "" && cliente.getApellido() != "" && cliente.getLocalidad() != ""){
 			if(verif == null) {
 				if(verificarPass == true) {
