@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Hotel {
@@ -16,6 +17,7 @@ public class Hotel {
 	private String nombre;
 	private String calle;
 	
+	@ManyToOne
 	private Localidad localidad;
 
 	public Long getId() {
