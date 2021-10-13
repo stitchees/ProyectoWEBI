@@ -7,21 +7,19 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class Cliente {
-
+public class Administrador {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-
+	
 	private String nombre;
 	private String apellido;
 	private String email;
 	private String password;
 	private String roll;
-	private String localidad;
-
+	
 	@ManyToOne
-
 	private Usuario usuario;
 
 	public Long getId() {
@@ -72,20 +70,16 @@ public class Cliente {
 		this.roll = roll;
 	}
 
-	public String getLocalidad() {
-		return localidad;
-	}
-
-	public void setLocalidad(String localidad) {
-		this.localidad = localidad;
-	}
-
-	public Usuario getUsuario() {
+	public Usuario getAdministrador() {
 		return usuario;
 	}
 
-	public void setUsuario(Usuario usuario) {
+	public void setAdministrador(Usuario usuario) {
 		this.usuario = usuario;
 	}
+
+	
+	
+	
 
 }

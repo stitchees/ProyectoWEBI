@@ -15,6 +15,12 @@ import ar.edu.unlam.tallerweb1.modelo.Cliente;
 	public class RepositorioClienteImpl implements RepositorioCliente{
 	
 	private SessionFactory sessionFactory;
+	
+	@Autowired
+	public RepositorioClienteImpl(SessionFactory sessionFactory){
+		this.sessionFactory = sessionFactory;
+	}
+
 
 	@Override
 	public Cliente consultarCliente(Cliente cliente) {

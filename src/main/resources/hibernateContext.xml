@@ -11,7 +11,7 @@
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url" value="jdbc:mysql://localhost:3306/db?serverTimezone=UTC" />
 		<property name="username" value="root" />
-		<property name="password" value="" />
+		<property name="password" value="Rodrigo36501275" />
 	</bean>
 
 	<!--Configuracion de la factory encargada de generar las sesiones con la base de datos, la misma -->
@@ -34,7 +34,7 @@
 				<!--create: lo crea siempre-->
 				<!--update: aplica cambios realizados-->
 				<!--none: no modifica nunca el esquema de datos-->
-				<prop key="hibernate.hbm2ddl.auto">create</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
 			</props>
 		</property>
 		<!--Se configura que paquetes debe escanear hibernate en busca de clases persistible, es decir-->
