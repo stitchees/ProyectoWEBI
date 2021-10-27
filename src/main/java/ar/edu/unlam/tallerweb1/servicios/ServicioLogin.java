@@ -8,5 +8,7 @@ public interface ServicioLogin {
 
 	Usuario consultarUsuario(String email, String password);
 
+	Cliente consultarCliente(Cliente cliente);
+
 	
 }
