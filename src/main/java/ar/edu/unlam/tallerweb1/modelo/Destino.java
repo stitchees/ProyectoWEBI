@@ -16,10 +16,23 @@ public class Destino {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	@OneToOne  
+
+	//@JoinColumn(name = "id")
+
 	private Domicilio domicilio;
 	private TipoDeDestino tipo;
 	public Long getId() {
 		return id;
+	}
+	
+	public String nombre;
+	
+	
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 	public void setId(Long id) {
 		this.id = id;

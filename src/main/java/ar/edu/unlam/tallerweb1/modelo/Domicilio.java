@@ -19,6 +19,10 @@ public class Domicilio {
 	//@JoinColumn(name = "id")
 	private Localidad localidad;
 
+	@ManyToOne   
+	//@JoinColumn(name = "id")
+	private Provincia provincia;
+
 	public Long getId() {
 		return id;
 	}
