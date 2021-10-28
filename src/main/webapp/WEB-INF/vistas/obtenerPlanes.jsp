@@ -17,20 +17,22 @@
 		<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 		<script src="js/bootstrap.min.js" type="text/javascript"></script>
 		<p>presupuesto ${presupuesto} destino ${destino}</p>
+		<table class="table">
+			  <thead>
+			    <tr>
+			      <th scope="col">cantidad Dias</th>
+			      <th scope="col">precio</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+				<c:forEach var="planViajeList" items="${planViaje}" >
+					<tr>
+						<td><b>${planViaje.cantidadDias}</b></td>
+						<td><b>${planViaje.precio}</b></td>
+					</tr>
+				</c:forEach>
 		<script type="text/javascript">
-			function redireccionar()
-			{
-			var presupuesto = document.getElementById("presupuesto").value;
-			var destino = document.getElementById("destino").value;
-				if(presupuesto == null || presupuesto == 0){
-					alert('Para continuar complete los campos');
-				}
-				else{
-					var url = "obtenerPlanes/"+presupuesto+"/"+destino;
-					console.log(url);
-					location.href= url;
-				}
-			}
+
 		</script>
 	
 	</body>

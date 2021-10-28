@@ -14,6 +14,9 @@ public class PlanViaje {
 	private Long id;
 	@OneToOne  
 	//@JoinColumn(name = "id")
+	private Destino destino;
+	@OneToOne  
+	//@JoinColumn(name = "id")
 	private Vuelo vueloIda;
 	@OneToOne  
 	//@JoinColumn(name = "id")

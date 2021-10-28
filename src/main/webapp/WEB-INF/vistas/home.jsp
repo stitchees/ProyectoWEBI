@@ -16,10 +16,10 @@
 		<script src="js/bootstrap.min.js" type="text/javascript"></script>
 		<h1>Mostrar Paquetes</h1>
 		<div class="card">
-			<form:form action="obtenerPlanes" method="get" >
+
 			  <div class="form-group">
 			    <label for="exampleInputEmail1">Presupuesto</label>
-			    <input type="number" class="form-control" id="presupuesto">
+			    <input type="text" class="form-control" id="presupuesto">
 			    <small id="emailHelp" class="form-text text-muted" >Ingrese el presupuesto maximo que desea invertir</small>
 			  </div>
 			  <div class="form-group">
@@ -27,7 +27,8 @@
 			    <input type="text" class="form-control" id="destino">
 			  </div>
 			  <button class="btn btn-primary" onClick="redireccionar()">Buscar</button>
-			</form>
+			  <button class="btn btn-primary" onClick="redireccionarDestino()">Buscar por Destino</button>
+
 		</div>
 		<h1>Armar Paquete</h1>
 		
@@ -44,6 +45,12 @@
 					console.log(url);
 					location.href= url;
 				}
+			}
+			function redireccionarDestino()
+			{
+				var url = "homeDestino/";
+				console.log(url);
+				location.href= url;
 			}
 		</script>
 	
