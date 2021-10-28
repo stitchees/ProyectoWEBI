@@ -18,9 +18,11 @@ public class Domicilio {
 	@ManyToOne   
 	//@JoinColumn(name = "id")
 	private Localidad localidad;
+
 	@ManyToOne   
 	//@JoinColumn(name = "id")
 	private Provincia provincia;
+
 	public Long getId() {
 		return id;
 	}
@@ -45,11 +47,6 @@ public class Domicilio {
 	public void setLocalidad(Localidad localidad) {
 		this.localidad = localidad;
 	}
-	public Provincia getProvincia() {
-		return provincia;
-	}
-	public void setProvincia(Provincia provincia) {
-		this.provincia = provincia;
-	}
+
 
 }

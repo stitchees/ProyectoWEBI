@@ -27,6 +27,7 @@ public class ControladorHome {
 		this.servicioDestino = servicioDestino;
 	}
 
+
 	// Escucha la URL /home por GET, y redirige a una vista.
 	@RequestMapping(path = "/home", method = RequestMethod.GET)
 	public ModelAndView irAHome() {
@@ -34,6 +35,7 @@ public class ControladorHome {
 	}
 
 	// Escucha la URL /home por GET, y redirige a una vista.
+
 	@RequestMapping(path = "/obtenerPlanes", method = RequestMethod.GET)
 
 	public ModelAndView irAObtenerPlanes(@RequestParam("presupuesto") Integer presupuesto,
@@ -41,6 +43,7 @@ public class ControladorHome {
 		ModelMap model = new ModelMap();
 
 		if (presupuesto == null || destino == null) {
+
 			return new ModelAndView("home");
 		} else {
 			model.put("presupuesto", presupuesto);

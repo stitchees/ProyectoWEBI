@@ -1,5 +1,6 @@
 package ar.edu.unlam.tallerweb1.servicios;
 
+
 import java.util.List;
 
 import javax.transaction.Transactional;
@@ -30,5 +31,6 @@ public class ServicioDestinoImpl implements ServicioDestino {
 	public List<Destino> obtenerDestinosParaUbicacion(String destino) {
 		return repositorioDestino.obtenerListaDestinosPara(destino);
 	}
+
 
 }
