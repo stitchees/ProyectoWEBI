@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 
 @Entity
@@ -14,11 +15,11 @@ public class Domicilio {
 	private Long id;	
 	private String calle;
 	private String altura;
-	@OneToOne   
-	@JoinColumn(name = "id")
+	@ManyToOne   
+	//@JoinColumn(name = "id")
 	private Localidad localidad;
-	@OneToOne   
-	@JoinColumn(name = "id")
+	@ManyToOne   
+	//@JoinColumn(name = "id")
 	private Provincia provincia;
 	public Long getId() {
 		return id;

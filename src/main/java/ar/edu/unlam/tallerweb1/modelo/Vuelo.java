@@ -22,10 +22,10 @@ public class Vuelo {
 	private Time hora;
 	private Date fecha;
 	@OneToOne  
-	@JoinColumn(name = "id")
+	//@JoinColumn(name = "id")
 	private Aeropuerto aeropuertoOrigen;
 	@OneToOne  
-	@JoinColumn(name = "id")
+	//@JoinColumn(name = "id")
 	private Aeropuerto aeropuertoDestino;
 	public Long getId() {
 		return id;

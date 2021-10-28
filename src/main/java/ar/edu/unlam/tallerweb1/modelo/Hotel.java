@@ -20,7 +20,7 @@ public class Hotel {
 	private Integer dias;
 	private Double costo;
 	@OneToOne  
-	@JoinColumn(name = "id")
+	//@JoinColumn(name = "id")
 	private Domicilio domicilio;
 	
 	public Domicilio getDomicilio() {
