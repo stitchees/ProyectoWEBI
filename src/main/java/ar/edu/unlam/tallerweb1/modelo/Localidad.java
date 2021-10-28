@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Localidad {
@@ -13,7 +14,9 @@ public class Localidad {
 	private Long id;	
 
 	private String descripcion;
-
+	@OneToOne   
+	//@JoinColumn(name = "id")
+	private Provincia provincia;
 
 	public Long getId() {
 		return id;
@@ -30,6 +33,12 @@ public class Localidad {
 
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
+	}
+	public Provincia getProvincia() {
+		return provincia;
+	}
+	public void setProvincia(Provincia provincia) {
+		this.provincia = provincia;
 	}
 
 

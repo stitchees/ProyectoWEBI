@@ -16,7 +16,6 @@ public class Destino {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	@OneToOne  
-	@JoinColumn(name = "id")
 	private Domicilio domicilio;
 	private TipoDeDestino tipo;
 	public Long getId() {

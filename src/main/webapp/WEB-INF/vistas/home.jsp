@@ -14,11 +14,12 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" ></script>
 		<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+		<h1>Mostrar Paquetes</h1>
 		<div class="card">
-
+			<form:form action="obtenerPlanes" method="get" >
 			  <div class="form-group">
 			    <label for="exampleInputEmail1">Presupuesto</label>
-			    <input type="text" class="form-control" id="presupuesto">
+			    <input type="number" class="form-control" id="presupuesto">
 			    <small id="emailHelp" class="form-text text-muted" >Ingrese el presupuesto maximo que desea invertir</small>
 			  </div>
 			  <div class="form-group">
@@ -26,8 +27,10 @@
 			    <input type="text" class="form-control" id="destino">
 			  </div>
 			  <button class="btn btn-primary" onClick="redireccionar()">Buscar</button>
-
+			</form>
 		</div>
+		<h1>Armar Paquete</h1>
+		
 		<script type="text/javascript">
 			function redireccionar()
 			{

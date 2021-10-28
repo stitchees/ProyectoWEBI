@@ -15,7 +15,7 @@ public class Aeropuerto {
 	private Long id;	
 	private String nombre;
 	@OneToOne  
-	@JoinColumn(name = "id")
+	//@JoinColumn(name = "id")
 	private Domicilio domicilio;
 	public Long getId() {
 		return id;

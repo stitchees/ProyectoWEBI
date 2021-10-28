@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 
 @Entity
@@ -14,12 +15,10 @@ public class Domicilio {
 	private Long id;	
 	private String calle;
 	private String altura;
-	@OneToOne   
-	@JoinColumn(name = "id")
+	@ManyToOne   
+	//@JoinColumn(name = "id")
 	private Localidad localidad;
-	@OneToOne   
-	@JoinColumn(name = "id")
-	private Provincia provincia;
+
 	public Long getId() {
 		return id;
 	}
@@ -44,11 +43,6 @@ public class Domicilio {
 	public void setLocalidad(Localidad localidad) {
 		this.localidad = localidad;
 	}
-	public Provincia getProvincia() {
-		return provincia;
-	}
-	public void setProvincia(Provincia provincia) {
-		this.provincia = provincia;
-	}
+
 
 }

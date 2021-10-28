@@ -13,10 +13,10 @@ public class PlanViaje {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	@OneToOne  
-	@JoinColumn(name = "id")
+	//@JoinColumn(name = "id")
 	private Vuelo vueloIda;
 	@OneToOne  
-	@JoinColumn(name = "id")
+	//@JoinColumn(name = "id")
 	private Vuelo vueloVuelta;
 	private Integer cantidadDias;
 	private Double precio;
